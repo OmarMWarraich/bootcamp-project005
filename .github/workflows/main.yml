@@ -29,21 +29,21 @@ jobs:
           node-version: 12 
       
       # Install Yarn
-        - uses: borales/actions-yarn@v2.0.0
-          with:
-            cmd: install # will run "install yarn" command
+      - uses: borales/actions-yarn @v2.0.0
+        with:
+          cmd: install # will run "install yarn" command
             
       # Build React App with Yarn
-        - name: Build React App
-          run: yarn build
+      - name: Build React App
+        run: yarn build
           
       # Install Surge
-        - name: Install Surge
-          run: npm install --global surge
+      - name: Install Surge
+        run: npm install --global surge
           
       # Deploy Surge
-        - name: Deploy React App to Surge
-          run: surge ./build bootcamp-project002-omar.surge.sh --token ${{secrets.SURGE_TOKEN}}
+      - name: Deploy React App to Surge
+        run: surge ./build bootcamp-project002-omar.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
           
           
