@@ -39,10 +39,10 @@ jobs:
           
       # Install Surge
       - name: Install Surge
-        run: npm install --global surge
+        run: npm install -g surge
           
       # Deploy Surge
-      - name: Deploy React App to Surge
+      - name: run surge
         run: surge ./build bootcamp-project002-omar.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
           
