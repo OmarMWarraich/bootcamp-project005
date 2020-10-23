@@ -1,0 +1,113 @@
+
+body{
+  
+    /*  */
+     background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  
+  }
+  
+  .container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      transform-style: preserve-3d ;
+     
+  }
+  .container .box{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: 10px 0;
+      background: #000;
+      transform-style: preserve-3d ;
+      border-radius: 5%;
+  
+  }
+  .container .box:hover {
+      box-shadow: 0 50px 80px rgb(0,0,0,.1);
+  }
+  .container .box .imgBx{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 20%;
+  
+  
+  }
+  .container .box .contentBx{
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      right: 50px;
+      background: #fff;
+      transform: translateZ(20px) scaleY(0);
+      padding: 10px 15px;
+      transform-origin: top;
+      transition: 1.5s;
+      transform-style: preserve-3d ;
+  }
+  .container .box:hover .contentBx{
+  transform: translateZ(50px) scaleY(1);
+  }
+  img{
+      width: 300px;
+      height: 300px;
+      border-radius: 5%;
+  }
+  .rowdiv{
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 2%;
+      padding: 2%;
+      justify-content: center;
+  }
+  .content{
+      
+      width: 30%;
+      padding: 50px;
+      padding-right: 50px;
+      /* padding-bottom: 50px; */
+  }
+  .rowdiv2{
+      background-image: url('title.webp');
+      opacity: 0.5;
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+     color: black;
+      justify-content: space-around;
+      border-radius: 0 10% 0 10%;
+      background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  }
+   .rowdiv2 h1{
+       display: inline;
+      color: #141414;
+      font-size: 40px;
+  }
+  h1{
+      color: #3b79ec;
+      font-size: 40px;
+  }
+  p{
+      color: gray;
+      font-size: 20px;
+  }
+  .alternate{
+      padding-right: 30px;
+      padding-top: 5%;
+  }
+  .honer{
+      text-align: center;
+      padding-right: 150px;
+      padding-left: 150px;
+  }
