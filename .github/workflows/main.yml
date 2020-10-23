@@ -43,7 +43,7 @@ jobs:
           
       # Deploy Surge
       - name: run surge
-        run: surge ./build bootcamp-project002-omar.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build bootcamp-project005-omar.surge.sh --token ${{secrets.SURGE_TOKEN}}
           
           
           
